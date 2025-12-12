@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
-    <title> Aaran Hypermarket - 7th Anniversary Gifts</title>
+    <title> Aaran Hypermarket - Hadiyadaha Sannad-guuradeedii 7aad</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -369,10 +369,10 @@
           src="assets/logo.png"
           alt="Apple iPhone 13 Pro Max"
         />
-        <h1 class="heading heading--h1">Congratulations!</h1>
+        <h1 class="heading heading--h1">Hambalyo!</h1>
         <p class="paragraph">
-          On the occasion of the 7th anniversary, you are among the few people
-          selected to receive free prizes! by Aaran Market.
+          Munaasabadda sannad-guuradeedii 7aad, waxaad ka mid tahay dadka yar ee
+          la doortay inay helaan abaalmarinno bilaash ah! Aaran Market ayaa bixisay.
         </p>
         <p class="paragraph"></p>
         <br />
@@ -380,7 +380,7 @@
           class="button"
           v-on:click="showOpeningModal = false; $confetti.stop()"
         >
-          CONTINUE
+          SII WAD
         </button>
       </vue-modal>
       <vue-modal :open="showInstructionsModal">
@@ -388,18 +388,18 @@
           src="assets/logo.png"
           style="width: 100px"
         />
-        <h2 class="heading heading--h1">Congratulations !</h2>
-        <h4 class="heading heading--h1">Your answers have been saved</h4>
+        <h2 class="heading heading--h1">Hambalyo!</h2>
+        <h4 class="heading heading--h1">Jawaabahaaga ayaa la keydiyay</h4>
         <p class="paragraph">
-          This is your chance!
+          Tani waa fursaddaada!
           <br /><br />
-          You must choose the box that contains the gift.
+          Waa inaad doorbidaa sanduuqa ay ku jirto hadiyadda.
           <br /><br />
-          You have 3 attempts, good luck!
+          Waxaad leedahay 3 isku day, nasiib wacan!
         </p>
         <br />
         <button class="button" v-on:click="showInstructionsModal = false">
-          Start Now
+          Hadda Bilow
         </button>
       </vue-modal>
       <vue-modal :open="showFailModal">
@@ -407,31 +407,31 @@
           src="assets/logo.png"
           style="width: 100px"
         />
-        <h1 class="heading heading--h1">Better luck next time</h1>
-        <p class="paragraph">You have (2) more chances.</p>
+        <h1 class="heading heading--h1">Nasiib wacan mar kale</h1>
+        <p class="paragraph">Waxaad leedahay (2) fursad oo kale.</p>
         <br />
-        <button class="button" v-on:click="showFailModal = false">OK</button>
+        <button class="button" v-on:click="showFailModal = false">HAA</button>
       </vue-modal>
       <vue-modal :open="showSuccessModal">
         <img src="https://i.imgur.com/y7AUO1e.png" style="width: 180px" />
-        <h1 class="heading heading--h1">Congratulations!</h1>
-        <h3 class="heading heading--h1">You did it! You won:</h3>
+        <h1 class="heading heading--h1">Hambalyo!</h1>
+        <h3 class="heading heading--h1">Waad guuleysatay! Waxaad heshay:</h3>
 
         <p class="paragraph">
           (Apple iPhone 17 - 256GB)
           <br />
-          <br />Follow the instructions on the next page to get your prize!
+          <br />Raac tilmaamaha bogga xiga si aad u hesho abaalmarintaada!
         </p>
         <br />
-        <a href="/form.html" class="button">NEXT</a>
+        <a href="/form.html" class="button">XIGA</a>
       </vue-modal>
       <div class="left">
         <div class="product-preview">
           <div class="product-preview__title"></div>
-          <h1 class="heading heading--h1">Congratulations!</h1>
+          <h1 class="heading heading--h1">Hambalyo!</h1>
           <p class="paragraph">
-            Aaran Hypermarket - 7th Anniversary Gifts <br />
-            Participate now and win many valuable prizes
+            Aaran Hypermarket - Hadiyadaha Sannad-guuradeedii 7aad <br />
+            Hadda ka qaybgal oo guul badan oo qiimo leh hel
           </p>
           <br />
         </div>
@@ -454,14 +454,14 @@
             v-on:rotate="rotate"
             v-on:finished="onRotatorFinished"
             :strings='[
-                     "Please wait ...",
-              "Please wait ...",
-              "Please wait ..."
+                     "Fadlan sug ...",
+              "Fadlan sug ...",
+              "Fadlan sug ..."
             ]'
           >
           </vue-text-rotator>
           <div class="verify__text" v-if="rotateIndex > 1">
-            <strong> You have answered all the questions. </strong>
+            <strong> Waxaad jawaabtay dhammaan su'aalaha. </strong>
             <img
               class="verify__icon verify__icon--checked"
               src="https://i.imgur.com/CnKHluD.png"
@@ -469,7 +469,7 @@
             />
           </div>
           <div class="verify__text" v-else>
-            Your answers are being checked
+            Jawaabahaaga ayaa la hubinayaa
             <img
               class="verify__icon verify__icon--spinner"
               :class="{'verify__icon--visible' : rotateIndex > 0}"
@@ -478,7 +478,7 @@
             />
           </div>
           <div class="verify__text" v-if="rotateIndex > 2">
-            <strong> There are still prizes available! </strong>
+            <strong> Weli waxaa jira abaalmarinno la heli karo! </strong>
             <img
               class="verify__icon verify__icon--checked"
               src="https://i.imgur.com/CnKHluD.png"
@@ -486,7 +486,7 @@
             />
           </div>
           <div class="verify__text" v-else>
-            Searching for gifts..
+            Hadiyadaha la raadinayaa..
             <img
               class="verify__icon verify__icon--spinner"
               :class="{'verify__icon--visible' : rotateIndex > 1}"
@@ -495,7 +495,7 @@
             />
           </div>
           <div class="verify__text" v-if="rotateIndex > 3">
-            <strong> Only (1344) gifts left! </strong>
+            <strong> Kaliya (1344) hadiyadood ayaa hadhay! </strong>
             <img
               class="verify__icon verify__icon--checked"
               src="https://i.imgur.com/CnKHluD.png"
@@ -503,7 +503,7 @@
             />
           </div>
           <div class="verify__text" v-else>
-            Checking inventory
+            Kaydka la hubinayaa
             <img
               class="verify__icon verify__icon--spinner"
               :class="{'verify__icon--visible' : rotateIndex > 2 }"
@@ -517,24 +517,24 @@
           :show-steps="true"
           :questions='[
            {
-              title: "Do you know AARAN?",
-              answers: [ { text: "YES" }, { text: "NO" } ]
+              title: "Ma taqaan AARAN?",
+              answers: [ { text: "HAA" }, { text: "MAYA" } ]
             },
                                                              {
-              title: "What is your gender? ",
-              answers: [ { text: "MALE" }, { text: "FEMALE" } ]
+              title: "Jinsigaagu waa maxay? ",
+              answers: [ { text: "LAB" }, { text: "DAMED" } ]
             },
             {
-              title: "How old are you?",
+              title: "Immisa jir ayaad tahay?",
               answers: [ { text: "18-21" }, { text: "22-29" }, { text: "30-39" }, { text: "40-59" }, { text: "60+" } ]
             },
                                                                          {
-              title: "How would you rate AARAN? ",
-              answers: [ { text: "Excellent" }, { text: "Very Good" }, { text: "Good" }, { text: "Not Good" } ]
+              title: "Sidee u qiimeeysaa AARAN? ",
+              answers: [ { text: "Aad u Fiican" }, { text: "Aad u Wanaagsan" }, { text: "Wanaagsan" }, { text: "Ma Fiicneyn" } ]
             },
             {
-              title: "Would you recommend it to your friend? ",
-              answers: [ { text: "YES" }, { text: "NO" } ]
+              title: "Ma u soo jeedin lahayd saaxiibkaaga? ",
+              answers: [ { text: "HAA" }, { text: "MAYA" } ]
             },
           ]'
           v-on:finish="onSurveyFinish"
@@ -558,7 +558,7 @@
 
       function ExitPop() {
         if (PreventExitPop != false) {
-          return "Don't leave!";
+          return "Ha tagin!";
         }
       }
       window.onbeforeunload = ExitPop;
@@ -591,7 +591,7 @@
         color: #fff; margin-top: 70px;
       "
     >
-      <p>Copyright © 2025 Aaran Market. All rights reserved.</p>
+      <p>Xuquuqda © 2025 Aaran Market. Dhammaan xuquuqaha way la xiriiraan.</p>
     </div>
     <script>
     "undefined" === typeof _trfq || (window._trfq = []);
